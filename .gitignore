@@ -1,0 +1,5 @@
+ods/
+csvs/
+__pycache__/
+*.pyc
+.env
