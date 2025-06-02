@@ -1,0 +1,46 @@
+
+## Como rodar
+
+1. **Clone o repositório:**
+    ```sh
+    git clone https://github.com/amarantesharlon/projeto_novo.git
+    cd projeto_novo
+    ```
+
+2. **Configure o arquivo `.env` se necessário (opcional).**
+
+3. **Suba os containers:**
+    ```sh
+    docker-compose up --build
+    ```
+
+4. **Os arquivos ODS e CSVs serão salvos nas pastas `ods/` e `csvs/`.**
+
+5. **O banco de dados Postgres estará disponível na porta 5432.**
+
+## Acessando os dados
+
+- Use o pgAdmin ou outro cliente para visualizar as tabelas criadas automaticamente no banco `meubanco`.
+- Cada aba de cada ODS vira uma tabela no formato `ods_X_sheet_Y`.
+
+## Como acessar o pgadmin
+
+- Digite no navegador : http://localhost:5050/
+- usuario : admin@admin.com
+- senha : admin
+## Para registrar o banco e visualizar no pgadmin 
+POSTGRES_USER=usuarioseguro
+POSTGRES_PASSWORD=senhasegura
+POSTGRES_DB=meubanco
+HOST=db
+
+## Dependências
+
+Veja o arquivo `requirements.txt`.
+
+## Observações
+
+- O script espera que as tabelas do banco estejam vazias na primeira execução.
+- Os arquivos ODS e CSVs não são versionados (veja `.gitignore`).
+
+---
