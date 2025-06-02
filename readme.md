@@ -12,4 +12,9 @@ Este projeto automatiza o download, extração e armazenamento dos dados do Índ
 - Criar tabelas dinâmicas no PostgreSQL para cada aba de cada arquivo ODS.
 - Salvar os arquivos ODS e CSV em pastas organizadas.
 
+## Pré-requisitos
+1 - Tenha o Docker Compose instalado em seu computador
+2 - Navegador WEB, para visualizar e gerenciar os seus comandos
+3 - Um Editor de Texto de sua preferência. Eu uso o Visual Studio!
+
 
