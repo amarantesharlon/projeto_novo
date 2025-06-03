@@ -24,5 +24,4 @@ Este projeto automatiza o download, extração e armazenamento dos dados do Índ
   &nbsp;&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="60" height="60"/>
   &nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/pgadmin-org/pgadmin4/master/web/pgadmin/static/img/logo.png" alt="pgAdmin" width="60" height="60"/>
-</p>
+
