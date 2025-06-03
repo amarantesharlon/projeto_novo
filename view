@@ -1,18 +1,57 @@
 --Comando usado para criar uma VIEW com a taxa de variação e diferença entre grupos econômicos
 
-
-CREATE OR REPLACE VIEW idam_variacao AS
-SELECT 
-    dt.mes,
-    dg.nome AS grupo_economico,
-    id.idam_atual,
-    id.idam_anterior,
-    (id.idam_atual - COALESCE(id.idam_anterior, 1)) / COALESCE(id.idam_anterior, 1) * 100 AS taxa_variacao,
-    AVG((id.idam_atual - COALESCE(id.idam_anterior, 1)) / COALESCE(id.idam_anterior, 1) * 100) 
-        OVER (PARTITION BY dt.mes) AS taxa_variacao_media,
-    (id.idam_atual - COALESCE(id.idam_anterior, 1)) / COALESCE(id.idam_anterior, 1) * 100 
-        - AVG((id.idam_atual - COALESCE(id.idam_anterior, 1)) / COALESCE(id.idam_anterior, 1) * 100) 
-        OVER (PARTITION BY dt.mes) AS diferenca_para_media
-FROM idam_dados id
-JOIN dim_tempo dt ON dt.id = id.tempo_id
-JOIN dim_grupo_economico dg ON dg.id = id.grupo_economico_id;
+CREATE OR REPLACE VIEW vw_ida_variacao AS
+WITH base AS (
+    SELECT
+        s.nome_servico,
+        g.nome_grupo,
+        t.ano,
+        t.mes,
+        f.valor_ida,
+        LAG(f.valor_ida) OVER (PARTITION BY s.nome_servico, g.nome_grupo ORDER BY t.ano, t.mes) AS valor_ida_anterior
+    FROM fato_ida f
+    JOIN dim_tempo t ON f.id_tempo = t.id_tempo
+    JOIN dim_servico s ON f.id_servico = s.id_servico
+    JOIN dim_grupo_economico g ON f.id_grupo = g.id_grupo
+),
+variacao AS (
+    SELECT
+        nome_servico,
+        nome_grupo,
+        ano,
+        mes,
+        valor_ida,
+        valor_ida_anterior,
+        CASE WHEN valor_ida_anterior IS NOT NULL AND valor_ida_anterior <> 0
+            THEN ((valor_ida - valor_ida_anterior) / valor_ida_anterior) * 100
+            ELSE NULL END AS taxa_variacao
+    FROM base
+),
+media AS (
+    SELECT
+        nome_servico,
+        ano,
+        mes,
+        AVG(taxa_variacao) AS taxa_variacao_media
+    FROM variacao
+    GROUP BY nome_servico, ano, mes
+)
+SELECT
+    v.nome_servico,
+    v.ano,
+    v.mes,
+    m.taxa_variacao_media,
+    -- Pivotando grupos econômicos nas colunas
+    MAX(CASE WHEN v.nome_grupo = 'ALGAR' THEN v.taxa_variacao END) AS algar,
+    MAX(CASE WHEN v.nome_grupo = 'GVT' THEN v.taxa_variacao END) AS gvt,
+    MAX(CASE WHEN v.nome_grupo = 'NET' THEN v.taxa_variacao END) AS net,
+    MAX(CASE WHEN v.nome_grupo = 'OI' THEN v.taxa_variacao END) AS oi,
+    MAX(CASE WHEN v.nome_grupo = 'SERCOMTEL' THEN v.taxa_variacao END) AS sercomtel,
+    MAX(CASE WHEN v.nome_grupo = 'SKY' THEN v.taxa_variacao END) AS sky,
+    MAX(CASE WHEN v.nome_grupo = 'TIM' THEN v.taxa_variacao END) AS tim,
+    MAX(CASE WHEN v.nome_grupo = 'VIACABO' THEN v.taxa_variacao END) AS viacabo,
+    MAX(CASE WHEN v.nome_grupo = 'VIVO' THEN v.taxa_variacao END) AS vivo
+FROM variacao v
+JOIN media m ON v.nome_servico = m.nome_servico AND v.ano = m.ano AND v.mes = m.mes
+GROUP BY v.nome_servico, v.ano, v.mes, m.taxa_variacao_media
+ORDER BY v.nome_servico, v.ano, v.mes;
