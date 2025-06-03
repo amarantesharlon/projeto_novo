@@ -1,0 +1,18 @@
+--Comando usado para criar uma VIEW com a taxa de variação e diferença entre grupos econômicos
+
+
+CREATE OR REPLACE VIEW idam_variacao AS
+SELECT 
+    dt.mes,
+    dg.nome AS grupo_economico,
+    id.idam_atual,
+    id.idam_anterior,
+    (id.idam_atual - COALESCE(id.idam_anterior, 1)) / COALESCE(id.idam_anterior, 1) * 100 AS taxa_variacao,
+    AVG((id.idam_atual - COALESCE(id.idam_anterior, 1)) / COALESCE(id.idam_anterior, 1) * 100) 
+        OVER (PARTITION BY dt.mes) AS taxa_variacao_media,
+    (id.idam_atual - COALESCE(id.idam_anterior, 1)) / COALESCE(id.idam_anterior, 1) * 100 
+        - AVG((id.idam_atual - COALESCE(id.idam_anterior, 1)) / COALESCE(id.idam_anterior, 1) * 100) 
+        OVER (PARTITION BY dt.mes) AS diferenca_para_media
+FROM idam_dados id
+JOIN dim_tempo dt ON dt.id = id.tempo_id
+JOIN dim_grupo_economico dg ON dg.id = id.grupo_economico_id;
