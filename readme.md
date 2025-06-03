@@ -16,7 +16,7 @@ Este projeto automatiza o download, extração e armazenamento dos dados do Índ
 1 - Tenha o Docker Compose instalado em seu computador
 2 - Navegador WEB, para visualizar e gerenciar os seus comandos
 3 - Um Editor de Texto de sua preferência. Eu uso o Visual Studio!
-
+4 - Para rodar este projeto siga as instruções em como rodar este projeto .
 
 ## Algumas observações 
 
