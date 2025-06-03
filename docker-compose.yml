@@ -1,0 +1,42 @@
+
+
+services:
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile1
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: usuarioseguro
+      POSTGRES_PASSWORD: senhasegura
+      POSTGRES_DB: meubanco
+    ports:
+      - "15432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: python_app
+    depends_on:
+      - db
+    command: ["python", "test_db.py"]
+    volumes:
+      - .:/app
+    working_dir: /app
+
+  pgadmin:
+    image: dpage/pgadmin4:8.6
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    depends_on:
+      - db
+
+volumes:
+  pgdata:

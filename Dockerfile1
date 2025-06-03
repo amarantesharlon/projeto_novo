@@ -1,0 +1,5 @@
+FROM postgres:17.5-bookworm
+
+# Configurações adicionais podem ser feitas aqui
+
+CMD ["postgres"]

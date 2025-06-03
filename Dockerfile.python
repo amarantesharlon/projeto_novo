@@ -1,0 +1,19 @@
+FROM python:3.11.12-bookworm
+
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+COPY test_db.py .
+CMD ["python", "script.py"]
+
+# Instala dependências do sistema para pandas, psycopg2 e odf
+RUN apt-get update && \
+    apt-get install -y gcc libpq-dev python3-dev libxml2-dev libxslt1-dev && \
+    apt-get clean
+
+# Copia os arquivos do projeto para o container
+WORKDIR /app
+COPY . /app
+
+# Instala as dependências Python
+RUN pip install --no-cache-dir -r requirements.txt

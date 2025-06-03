@@ -1,0 +1,109 @@
+GRUPO ECONÔMICO;VARIÁVEL;2015-10;2015-11;2015-12
+ALGAR;Indicador de Desempenho no Atendimento (IDA);89.4230111117846;95.8407905169944;94.1650279953477
+GVT;Indicador de Desempenho no Atendimento (IDA);76.0259088241672;77.4212588130263;75.151621699757
+NET;Indicador de Desempenho no Atendimento (IDA);83.4258146203448;85.8989412116094;91.3631657489634
+OI;Indicador de Desempenho no Atendimento (IDA);0.0;0.0;0.610611016545533
+SERCOMTEL;Indicador de Desempenho no Atendimento (IDA);83.2176996608079;67.3586914440573;93.6507936507936
+SKY;Indicador de Desempenho no Atendimento (IDA);13.5394671023312;29.8479783762932;24.221766084839
+TIM;Indicador de Desempenho no Atendimento (IDA);0.0;0.0;0.0
+VIACABO;Indicador de Desempenho no Atendimento (IDA);68.205590017681;63.2844062682499;77.7089918039587
+VIVO;Indicador de Desempenho no Atendimento (IDA);30.6586270566856;32.1906465874071;37.9713037971143
+ALGAR;Índice de Reclamações;0.600031228391069;0.566368379320225;0.633398880186091
+GVT;Índice de Reclamações;1.35896364703331;1.30314964747895;1.39393513200972
+NET;Índice de Reclamações;0.847246720823034;0.763297653462124;0.745473370041465
+OI;Índice de Reclamações;4.24495374441558;3.97740248925998;3.81022206627024
+SERCOMTEL;Índice de Reclamações;0.300957942728344;0.266807269862848;0.265113020205399
+SKY;Índice de Reclamações;3.62369280911942;2.94449146097476;3.43112935660644
+TIM;Índice de Reclamações;5.86864033863815;5.37423586373712;5.60789147243811
+VIACABO;Índice de Reclamações;0.717389026366062;0.435807211802305;0.489727759535642
+VIVO;Índice de Reclamações;2.61854831442065;2.44425104493074;2.30208140470572
+ALGAR;Quantidade de acessos em serviço;448310.0;450237.0;453111.0
+GVT;Quantidade de acessos em serviço;3264988.0;3250586.0;3199575.0
+NET;Quantidade de acessos em serviço;8068488.0;8092518.0;8110283.0
+OI;Quantidade de acessos em serviço;6397714.0;6384066.0;6372332.0
+SERCOMTEL;Quantidade de acessos em serviço;156168.0;157417.0;158423.0
+SKY;Quantidade de acessos em serviço;244226.0;256411.0;264053.0
+TIM;Quantidade de acessos em serviço;232933.0;242267.0;252323.0
+VIACABO;Quantidade de acessos em serviço;124061.0;123908.0;124559.0
+VIVO;Quantidade de acessos em serviço;4105710.0;4098597.0;4196637.0
+ALGAR;Quantidade de reabertas;15.0;13.0;20.0
+GVT;Quantidade de reabertas;211.0;183.0;264.0
+NET;Quantidade de reabertas;506.0;442.0;442.0
+OI;Quantidade de reabertas;2766.0;2514.0;2251.0
+SERCOMTEL;Quantidade de reabertas;4.0;11.0;1.0
+SKY;Quantidade de reabertas;83.0;79.0;67.0
+TIM;Quantidade de reabertas;192.0;231.0;282.0
+VIACABO;Quantidade de reabertas;22.0;17.0;14.0
+VIVO;Quantidade de reabertas;1013.0;980.0;894.0
+ALGAR;Quantidade de reclamações;269.0;255.0;287.0
+GVT;Quantidade de reclamações;4437.0;4236.0;4460.0
+NET;Quantidade de reclamações;6836.0;6177.0;6046.0
+OI;Quantidade de reclamações;27158.0;25392.0;24280.0
+SERCOMTEL;Quantidade de reclamações;47.0;42.0;42.0
+SKY;Quantidade de reclamações;885.0;755.0;906.0
+TIM;Quantidade de reclamações;1367.0;1302.0;1415.0
+VIACABO;Quantidade de reclamações;89.0;54.0;61.0
+VIVO;Quantidade de reclamações;10751.0;10018.0;9661.0
+ALGAR;Quantidade de Reclamações no Período;734.0;759.0;794.0
+GVT;Quantidade de Reclamações no Período;12004.0;12281.0;12712.0
+NET;Quantidade de Reclamações no Período;20861.0;20310.0;19762.0
+OI;Quantidade de Reclamações no Período;97362.0;89454.0;83026.0
+SERCOMTEL;Quantidade de Reclamações no Período;146.0;133.0;127.0
+SKY;Quantidade de Reclamações no Período;2740.0;2569.0;2529.0
+TIM;Quantidade de Reclamações no Período;2656.0;3097.0;3544.0
+VIACABO;Quantidade de Reclamações no Período;270.0;270.0;250.0
+VIVO;Quantidade de Reclamações no Período;34136.0;32660.0;31959.0
+ALGAR;Quantidade de resolvidas;269.0;255.0;287.0
+GVT;Quantidade de resolvidas;4407.0;4212.0;4444.0
+NET;Quantidade de resolvidas;6783.0;6152.0;6031.0
+OI;Quantidade de resolvidas;26058.0;23917.0;23132.0
+SERCOMTEL;Quantidade de resolvidas;46.0;41.0;42.0
+SKY;Quantidade de resolvidas;884.0;755.0;900.0
+TIM;Quantidade de resolvidas;1289.0;1137.0;1376.0
+VIACABO;Quantidade de resolvidas;84.0;43.0;60.0
+VIVO;Quantidade de resolvidas;10697.0;9956.0;9658.0
+ALGAR;Quantidade de Sol. Resolvidas em até 5 dias;224.0;231.0;255.0
+GVT;Quantidade de Sol. Resolvidas em até 5 dias;3812.0;3663.0;3856.0
+NET;Quantidade de Sol. Resolvidas em até 5 dias;5730.0;5247.0;5157.0
+OI;Quantidade de Sol. Resolvidas em até 5 dias;20348.0;19010.0;18415.0
+SERCOMTEL;Quantidade de Sol. Resolvidas em até 5 dias;31.0;22.0;34.0
+SKY;Quantidade de Sol. Resolvidas em até 5 dias;767.0;648.0;773.0
+TIM;Quantidade de Sol. Resolvidas em até 5 dias;1131.0;974.0;1124.0
+VIACABO;Quantidade de Sol. Resolvidas em até 5 dias;69.0;36.0;51.0
+VIVO;Quantidade de Sol. Resolvidas em até 5 dias;8184.0;6847.0;7142.0
+ALGAR;Quantidade de Sol. Resolvidas no Período;734.0;759.0;794.0
+GVT;Quantidade de Sol. Resolvidas no Período;11911.0;12242.0;12706.0
+NET;Quantidade de Sol. Resolvidas no Período;20715.0;20293.0;19679.0
+OI;Quantidade de Sol. Resolvidas no Período;97063.0;89052.0;82752.0
+SERCOMTEL;Quantidade de Sol. Resolvidas no Período;146.0;133.0;127.0
+SKY;Quantidade de Sol. Resolvidas no Período;2739.0;2569.0;2529.0
+TIM;Quantidade de Sol. Resolvidas no Período;2633.0;3035.0;3521.0
+VIACABO;Quantidade de Sol. Resolvidas no Período;270.0;270.0;250.0
+VIVO;Quantidade de Sol. Resolvidas no Período;33907.0;32401.0;31872.0
+ALGAR;Taxa de Reabertas;5.57620817843866;5.09803921568627;6.96864111498258
+GVT;Taxa de Reabertas;4.78783753120036;4.34472934472934;5.94059405940594
+NET;Taxa de Reabertas;7.45982603567743;7.18465539661899;7.32880119383187
+OI;Taxa de Reabertas;10.6147824084734;10.5113517581636;9.73110842123465
+SERCOMTEL;Taxa de Reabertas;8.69565217391304;26.8292682926829;2.38095238095238
+SKY;Taxa de Reabertas;9.38914027149321;10.4635761589404;7.44444444444444
+TIM;Taxa de Reabertas;14.8952676493406;20.3166226912929;20.4941860465116
+VIACABO;Taxa de Reabertas;26.1904761904762;39.5348837209302;23.3333333333333
+VIVO;Taxa de Reabertas;9.46994484434888;9.84331056649257;9.25657486021951
+ALGAR;Taxa de Resolvidas em 5 dias Úteis;83.271375464684;90.5882352941177;88.8501742160279
+GVT;Taxa de Resolvidas em 5 dias Úteis;85.9139057922019;86.4730878186969;86.457399103139
+NET;Taxa de Resolvidas em 5 dias Úteis;83.8209479227618;84.9441476444876;85.2960635130665
+OI;Taxa de Resolvidas em 5 dias Úteis;74.9245157964504;74.8660995589162;75.8443163097199
+SERCOMTEL;Taxa de Resolvidas em 5 dias Úteis;65.9574468085106;52.3809523809524;80.9523809523809
+SKY;Taxa de Resolvidas em 5 dias Úteis;86.6666666666667;85.8278145695364;85.3200883002208
+TIM;Taxa de Resolvidas em 5 dias Úteis;82.7359180687637;74.8079877112135;79.434628975265
+VIACABO;Taxa de Resolvidas em 5 dias Úteis;77.5280898876404;66.6666666666667;83.6065573770492
+VIVO;Taxa de Resolvidas em 5 dias Úteis;76.1231513347596;68.3469754442004;73.9260946071835
+ALGAR;Taxa de Resolvidas no Período;100.0;100.0;100.0
+GVT;Taxa de Resolvidas no Período;99.225;99.682;99.953
+NET;Taxa de Resolvidas no Período;99.3;99.916;99.58
+OI;Taxa de Resolvidas no Período;99.693;99.551;99.67
+SERCOMTEL;Taxa de Resolvidas no Período;100.0;100.0;100.0
+SKY;Taxa de Resolvidas no Período;99.964;100.0;100.0
+TIM;Taxa de Resolvidas no Período;99.134;97.998;99.351
+VIACABO;Taxa de Resolvidas no Período;100.0;100.0;100.0
+VIVO;Taxa de Resolvidas no Período;99.329;99.207;99.728
