@@ -1,0 +1,22 @@
+--Cria tabelas  dim_tempo dim_grupo_economico idam_dados
+
+-- Tabela de Dimensão: Tempo
+CREATE TABLE dim_tempo (
+    id SERIAL PRIMARY KEY,
+    mes DATE UNIQUE
+);
+
+-- Tabela de Dimensão: Grupo Econômico
+CREATE TABLE dim_grupo_economico (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) UNIQUE
+);
+
+-- Tabela de Fato: Dados do IDA
+CREATE TABLE idam_dados (
+    id SERIAL PRIMARY KEY,
+    tempo_id INT REFERENCES dim_tempo(id),
+    grupo_economico_id INT REFERENCES dim_grupo_economico(id),
+    idam_atual NUMERIC,
+    idam_anterior NUMERIC
+);
