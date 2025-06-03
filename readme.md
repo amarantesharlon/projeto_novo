@@ -17,6 +17,16 @@ Este projeto automatiza o download, extração e armazenamento dos dados do Índ
 2 - Navegador WEB, para visualizar e gerenciar os seus comandos
 3 - Um Editor de Texto de sua preferência. Eu uso o Visual Studio!
 
+
+## Algumas observações 
+
+Na pasta View está uma consulta que cria a VIEW que calcula a taxa de variação e a diferença entre a média e os valores individuais dos grupos econômicos.
+
+Na pasta SQL estão algumas consultas:  Criação Data Mart baseado no modelo estrela para organizar os dados e criar a VIEW que calcula a taxa de variação e a diferença entre a média e os valores individuais dos grupos econômicos.
+
+Obs:  Tanto o Data Mart quanto a view precisa ser populada pelas tabelas para encontrar os resultados esperados .
+
+
 ## Tecnologias utilizadas
 
 <p align="center">
@@ -24,10 +34,4 @@ Este projeto automatiza o download, extração e armazenamento dos dados do Índ
   &nbsp;&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="60" height="60"/>
   &nbsp;&nbsp;
-## Algumas observações 
-Na pasta View está uma consulta que cria a VIEW que calcula a taxa de variação e a diferença entre a média e os valores individuais dos grupos econômicos.
-
-Na pasta SQL estão algumas consultas:  Criação Data Mart baseado no modelo estrela para organizar os dados e criar a VIEW que calcula a taxa de variação e a diferença entre a média e os valores individuais dos grupos econômicos.
-
-Obs:  Tanto o Data Mart quanto a view precisa ser populada pelas tabelas para encontrar os resultados esperados .
   
