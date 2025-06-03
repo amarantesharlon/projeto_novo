@@ -11,6 +11,8 @@ Este projeto automatiza o download, extração e armazenamento dos dados do Índ
 - Converter os dados para CSV.
 - Criar tabelas dinâmicas no PostgreSQL para cada aba de cada arquivo ODS.
 - Salvar os arquivos ODS e CSV em pastas organizadas.
+- Criar um Data Mart baseado no modelo estrela para organizar os dados
+- Criar uma VIEW que calcula a taxa de variação e a diferença entre a média e os valores individuais dos grupos econômicos.
 
 ## Pré-requisitos
 1 - Tenha o Docker Compose instalado em seu computador
