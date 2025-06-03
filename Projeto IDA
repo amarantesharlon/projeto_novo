@@ -1,0 +1,9 @@
+projeto_novo/
+├── Dockerfile.python
+├── docker-compose.yml
+├── requirements.txt
+├── test_db.py
+├── ods/
+├── csvs/
+├── README.md
+└── .gitignore
